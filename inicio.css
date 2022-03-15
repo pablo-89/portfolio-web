@@ -7,37 +7,23 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 h1 {
     line-height: 1.3em;
     font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
     width: 80%;
     max-width: 850px;
     margin: 0 auto;
-}
-
-.container-img {
     display: flex;
     text-align: center;
     align-content: center;
-    width: 60%;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-
-img {
-    width: 550px;
-    height: 300px;
-}
-
-.text-right {
-    width: 90%;
-    height: 270px;
-    padding: 15px;
-    background: #ccc;
 }
 
 .header {
@@ -96,6 +82,35 @@ img {
     padding-top: 12rem;
 }
 
+.container-img {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.box {
+    width: 60%;
+    height: 281px;
+    padding: 15px;
+    background: #ccc;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.text-right {
+    display: flex;
+    flex-flow: column;
+    margin-top: 1rem;
+}
+
 .footer {
     background: #f2f2f2;
     padding: 4rem 0;
@@ -103,7 +118,7 @@ img {
     margin-top: 6rem;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:810px) {
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -139,20 +154,27 @@ img {
     .container-img {
         display: flex;
         flex-flow: column;
+        text-align: center;
         width: 80%;
-        margin: 0 auto;
-        justify-content: space-between;
-        padding-bottom: 20px;
     }
     img {
-        width: 288px;
-        height: 165px;
+        width: 100%;
     }
-    .text-right {
-        width: 90%;
-        height: 270px;
+    .box {
+        width: 80%;
+        height: 281px;
+        max-height: 281px;
         padding: 15px;
         background: #ccc;
-        overflow: scroll;
+    }
+    @media all and (max-width: 1000px) {
+        img {
+            width: 90%;
+        }
+    }
+    @media all and (max-width: 400px) {
+        img {
+            width: 100%;
+        }
     }
 }
