@@ -4,6 +4,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.6em;
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -11,14 +12,32 @@ h1 {
     font-size: 2rem;
 }
 
-p {
-    margin-bottom: 1.6em;
-}
-
 .container {
-    width: 85%;
+    width: 80%;
     max-width: 850px;
     margin: 0 auto;
+}
+
+.container-img {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 550px;
+    height: 300px;
+}
+
+.text-right {
+    width: 90%;
+    height: 270px;
+    padding: 15px;
+    background: #ccc;
 }
 
 .header {
@@ -88,7 +107,12 @@ p {
     .menu-icon {
         display: block;
         cursor: pointer;
-        padding: 0.5rem 1rem;
+        padding: 0.4rem 1rem;
+    }
+    .menu-icon:hover {
+        background: #4a4a4a;
+        transition: all 0.4s linear;
+        border-radius: 5px;
     }
     .navigation {
         width: 100%;
@@ -111,5 +135,24 @@ p {
     }
     .navigation ul li a:hover {
         background: #4a4a4a;
+    }
+    .container-img {
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    img {
+        width: 288px;
+        height: 165px;
+    }
+    .text-right {
+        width: 90%;
+        height: 270px;
+        padding: 15px;
+        background: #ccc;
+        overflow: scroll;
     }
 }
