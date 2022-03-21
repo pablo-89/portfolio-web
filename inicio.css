@@ -53,6 +53,10 @@ h1 {
     font-size: 1.4em;
 }
 
+.gif {
+    width: 40%;
+}
+
 .menu-icon {
     display: none;
 }
