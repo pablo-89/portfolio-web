@@ -5,6 +5,8 @@ body {
     line-height: 1.6em;
     margin: 0;
     padding: 0;
+    padding-bottom: 90px;
+    background-color: whitesmoke;
 }
 
 p {
@@ -18,8 +20,7 @@ h1 {
 }
 
 .container {
-    width: 80%;
-    max-width: 850px;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -84,7 +85,7 @@ h1 {
 }
 
 .main {
-    padding-top: 12rem;
+    padding-top: 20rem;
 }
 
 .galeria {
@@ -159,7 +160,7 @@ h1 {
 
 .footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     background: #333;
     color: white;
     height: 80px;
