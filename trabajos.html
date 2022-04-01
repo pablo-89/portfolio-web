@@ -9,9 +9,10 @@
     <title>Visual link</title>
     <link href="inicio.css" rel="stylesheet">
     <link href="trabajos.css" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/ff140e8d04.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="popup.js"></script>
 
 </head>
 
@@ -143,46 +144,59 @@
         </div>
         <div class="galeria">
             <h1>Diseño y Maquetación</h1>
-            <div class="contenedor-imagenes">
 
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia naturaleza</h2>
+            <div class="contenedor">
+                <article>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup">
+                        <img src="img/room-wall-logo-pro-3-web.png">
+                    </button>
+                </article>
 
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia paisaje</h2>
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia paisaje</h2>
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia animal</h2>
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia animal</h2>
-                    </div>
-                </div>
-                <div class="imagen">
-                    <img src="img/.jpg" alt="">
-                    <div class="overlay">
-                        <h2>fotografia animal</h2>
+
+                <div class="efecto" id="efecto">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Pie de imagen</h3>
+                        <img src="img/room-wall-logo-pro-3-web.png">
                     </div>
                 </div>
             </div>
+
+
+            <div class="contenedor">
+                <article>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup">
+                        <img src="img/room-wall-logo-pro-3-web.png">
+                    </button>
+                </article>
+
+
+                <div class="efecto" id="efecto">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Pie de imagen</h3>
+                        <img src="img/room-wall-logo-pro-3-web.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <article>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup">
+                        <img src="img/room-wall-logo-pro-3-web.png">
+                    </button>
+                </article>
+
+
+                <div class="efecto" id="efecto">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Pie de imagen</h3>
+                        <img src="img/room-wall-logo-pro-3-web.png">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </main>
@@ -190,6 +204,8 @@
 
     </footer>
     <script src="scripts.js"></script>
+    <script src="popup.js"></script>
+
 </body>
 
 </html>
