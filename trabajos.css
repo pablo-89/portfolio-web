@@ -1,5 +1,6 @@
 .main {
     padding-top: 9rem !important;
+    text-align: center;
 }
 
 .contenedor-imagenes {
@@ -30,6 +31,13 @@ button {
 
 .contenedor-imagenes .contenedor .efecto {
     box-shadow: none;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .efecto {
