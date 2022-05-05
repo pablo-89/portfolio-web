@@ -7,6 +7,11 @@
     margin-bottom: 35px;
 }
 
+.contenedor-botones:hover {
+    background: #333;
+    cursor: pointer;
+}
+
 .contenedor article .btn-abrir-popup:hover {
     background: rgba(94, 125227, .9);
 }
@@ -38,6 +43,7 @@ button {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    align-items: center;
 }
 
 .efecto {

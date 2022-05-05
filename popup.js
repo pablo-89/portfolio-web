@@ -13,33 +13,40 @@ btnCerrarPopup.addEventListener('click', function() {
     popup.classList.remove('active');
 
 });
-var btnAbrirPopup = document.getElementById('btn-abrir'),
-    efecto = document.getElementById('stilo'),
-    popup = document.getElementById('pop-up'),
-    btnCerrarPopup = document.getElementById('btn-cerrar');
 
-btnAbrirPopup.addEventListener('click', function() {
-    efecto.classList.add('active');
-    popup.classList.add('active');
+
+
+var btnAbrir = document.getElementById('btn-abrir'),
+    stilo = document.getElementById('stilo'),
+    popUp = document.getElementById('pop-up'),
+    btnCerrar = document.getElementById('btn-cerrar');
+
+btnAbrir.addEventListener('click', function() {
+    stilo.classList.add('active');
+    popUp.classList.add('active');
 });
 
-btnCerrarPopup.addEventListener('click', function() {
-    efecto.classList.remove('active');
-    popup.classList.remove('active');
+btnCerrar.addEventListener('click', function() {
+    stilo.classList.remove('active');
+    popUp.classList.remove('active');
 
 });
-var btnAbrirPopup = document.getElementById('abrir-popup'),
-    efecto = document.getElementById('effect'),
-    popup = document.getElementById('popup1'),
-    btnCerrarPopup = document.getElementById('cerrar-popup');
 
-btnAbrirPopup.addEventListener('click', function() {
-    efecto.classList.add('active');
-    popup.classList.add('active');
+
+
+
+var AbrirPopup = document.getElementById('abrir-popup'),
+    effect = document.getElementById('effect'),
+    popup1 = document.getElementById('popup1'),
+    CerrarPopup = document.getElementById('cerrar-popup');
+
+AbrirPopup.addEventListener('click', function() {
+    effect.classList.add('active');
+    popup1.classList.add('active');
 });
 
-btnCerrarPopup.addEventListener('click', function() {
-    efecto.classList.remove('active');
-    popup.classList.remove('active');
+CerrarPopup.addEventListener('click', function() {
+    effect.classList.remove('active');
+    popup1.classList.remove('active');
 
 });

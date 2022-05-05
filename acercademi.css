@@ -1,0 +1,30 @@
+.main {
+    padding-top: 10rem !important;
+}
+
+.contenedor-body {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-texto {
+    font-size: 18px;
+    margin: 25px;
+    width: 50%;
+}
+
+.contenedor-imagen {
+    width: 54%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+}
