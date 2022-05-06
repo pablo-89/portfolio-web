@@ -50,3 +50,14 @@ CerrarPopup.addEventListener('click', function() {
     popup1.classList.remove('active');
 
 });
+
+
+// con esto seleccionas varios elementos con la misma clase
+var botones = document.querySelectorAll('.clasequequieras');
+// con esto recorres los elementos que antes seleccionases
+botones.forEach(function(boton) {
+    // aqui dentro de la función del forEach, se va a llamar una vez por cada elemento que haya dentro de botones, y en cada ciclo, te va a poner en la variable boton cada elemento del array
+    boton.addEventListener('click', function(e) {
+        // aqui haces la función q se llamará al hacer click
+    });
+});
