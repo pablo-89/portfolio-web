@@ -1,0 +1,241 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 90px;
+    background-color: whitesmoke;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    line-height: 1.3em;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.4em;
+}
+
+.gif {
+    width: 40%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background: #4a4a4a;
+}
+
+.main {
+    padding-top: 15rem;
+}
+
+.galeria {
+    font-family: 'open sans';
+}
+
+.galeria h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.galeria h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea {
+    border-top: 5px solid #0077c0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen {
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.781);
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: #4a4a4a;
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    color: white;
+    height: 80px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+    left: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.texto {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 22px;
+    }
+    .contenedor-imagenes {
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.4rem 1rem;
+    }
+    .menu-icon:hover {
+        background: #4a4a4a;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation ul li a:hover {
+        background: #4a4a4a;
+    }
+}
