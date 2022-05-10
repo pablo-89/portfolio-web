@@ -29,3 +29,65 @@
     width: 100%;
     margin-top: 40px;
 }
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 22px;
+    }
+    .contenedor-imagenes {
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.4rem 1rem;
+    }
+    .menu-icon:hover {
+        background: #4a4a4a;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navigation ul li a:hover {
+        background: #4a4a4a;
+    }
+}
