@@ -32,6 +32,10 @@
     color: #fff;
 }
 
+.tittle span {
+    font-size: 60px;
+}
+
 .text {
     color: #fff;
     width: 65%;
@@ -62,4 +66,17 @@
 .btn-style:active {
     position: relative;
     top: 1px;
+}
+
+@media only screen and (max-width:810px) {
+    .tittle span {
+        font-size: 55px;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    .btn-box {
+        margin: 0 auto;
+    }
 }
