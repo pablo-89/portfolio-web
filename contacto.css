@@ -1,7 +1,3 @@
-.main {
-    padding-top: 5rem;
-}
-
 ​ input[type=text],
 select,
 textarea {
@@ -38,4 +34,43 @@ input[type=submit]:hover {
 form {
     display: flex;
     flex-flow: column;
+}
+
+#cambios {
+    padding-top: 5rem
+}
+
+.contacto {
+    display: flex;
+    margin: 25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps {
+    width: 35%;
+    height: 250px;
+}
+
+@media only screen and (max-width:810px) {
+    .contacto {
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        width: 80%;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    #cambios {
+        padding-top: 12rem
+    }
+    .maps {
+        width: 80%;
+        height: 250px;
+    }
 }
