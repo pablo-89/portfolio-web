@@ -95,6 +95,17 @@
         top: 20px;
         right: 20px;
     }
+    .contenedor-video {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .contenedor-video {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 85%;
+    }
 }
 
 .video {
