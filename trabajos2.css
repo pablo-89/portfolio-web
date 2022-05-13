@@ -8,6 +8,14 @@
     padding: 15px;
 }
 
+#trabajos {
+    background-image: url(img/fondoweb.png);
+}
+
+#color {
+    background-color: grey;
+}
+
 .archivo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

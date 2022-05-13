@@ -10,6 +10,14 @@
     align-items: center;
 }
 
+#trabajos {
+    background-image: url(img/DSC08858.png);
+}
+
+.color {
+    background: grey;
+}
+
 .archivo>a {
     display: flex;
     justify-content: center;
