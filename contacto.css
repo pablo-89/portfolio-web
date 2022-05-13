@@ -40,17 +40,17 @@ form {
     padding-top: 5rem
 }
 
-.contacto {
-    display: flex;
-    margin: 25px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+#contacto {
+    background-image: url("img/contacto1.png");
+    background-size: content;
 }
 
-.maps {
-    width: 35%;
-    height: 250px;
+.contacto {
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 @media only screen and (max-width:810px) {
