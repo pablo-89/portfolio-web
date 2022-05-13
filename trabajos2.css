@@ -1,0 +1,142 @@
+.box-trabajos {
+    display: flex;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+}
+
+.archivo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.archivo>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.archivo img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.archivo a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img {
+    max-width: 80vw;
+    max-height: 80vh;
+    min-width: 50vw;
+    min-height: 50vh;
+    object-fit: contain;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #851985;
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next {
+    display: block;
+    background: #851985;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .archivo {
+        grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    }
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+    .contenedor-video {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .contenedor-video {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 85%;
+    }
+}
+
+.video {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.contenedor-video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 96%;
+    grid-gap: 10px;
+}
+
+.contenedor-video>a {
+    width: 100%;
+    height: 400px;
+    margin: 30px;
+}
+
+#change {
+    padding-top: 10rem;
+}
