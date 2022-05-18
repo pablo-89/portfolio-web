@@ -36,10 +36,6 @@ form {
     flex-flow: column;
 }
 
-#cambios {
-    padding-top: 5rem
-}
-
 #contacto {
     background-image: url("img/contacto1.png");
     background-size: content;

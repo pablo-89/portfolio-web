@@ -7,14 +7,10 @@
     color: #fff;
 }
 
-#space-box {
-    padding-top: 10rem;
-}
-
 .acercademi {
     display: flex;
     flex-flow: column;
-    margin: 25px;
+    margin: 150px 5px 15px 20px;
     justify-content: center;
 }
 
@@ -39,7 +35,7 @@
 .text {
     color: #fff;
     width: 65%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .btn-style {
