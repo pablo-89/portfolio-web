@@ -240,7 +240,7 @@
     }
 }
 
-@media screen and (max-width:450px) {
+@media only screen and (max-width:450px) {
     h1 {
         font-size: 22px;
     }
@@ -250,23 +250,6 @@
     .contenedor-imagenes .imagen {
         width: 80%;
     }
-}
-
-@media screen and (max-width:400px) {
-    .archivo {
-        grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
-    }
-    .close {
-        top: 20px;
-        right: 20px;
-    }
-    .contenedor-video {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width:450px) {
     .contenedor-video {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         width: 85%;
@@ -286,6 +269,27 @@
         display: flex;
         flex-flow: column;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .archivo {
+        grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    }
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+    .contenedor-video {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .sidenav a {
+        color: #333;
+        font-size: 20px;
     }
 }
 
