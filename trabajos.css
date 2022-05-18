@@ -294,6 +294,13 @@
     }
 }
 
+@media screen and (max-width:420px) {
+    .sidenav a {
+        color: #333;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width:400px) {
     .archivo {
         grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
@@ -308,7 +315,7 @@
     }
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:390px) {
     .sidenav a {
         color: #333;
         font-size: 16px;
