@@ -153,12 +153,18 @@ h1 {
     .navigation ul li a:hover {
         background: #4a4a4a;
     }
+    .logo {
+        width: 80%;
+    }
+    .logo img {
+        width: 80%;
+    }
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:850px) {
     .texto-presentacion {
-        width: 100%;
-        height: 63vh;
+        width: 90%;
+        height: 100vh;
         display: flex;
         flex-flow: column;
         text-align: center;
@@ -171,6 +177,26 @@ h1 {
     #inico {
         background-image: url("img/fondoweb.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .texto-presentacion {
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        font-family: 'Oleo Script Swash Caps', light;
+        margin-top: 100px;
+        margin: 15px;
+    }
+    #inico {
+        background-image: url("img/fondoweb.png");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }

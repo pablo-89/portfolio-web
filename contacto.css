@@ -71,3 +71,10 @@ form {
         margin-top: 140px;
     }
 }
+
+@media only screen and (max-width:450px) {
+    #contacto {
+        background-image: url("img/fondoweb.png");
+        background-size: content;
+    }
+}
