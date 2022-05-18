@@ -1,9 +1,14 @@
 #trabajos {
     background-image: url(img/fondoweb.png);
+    color: #333;
 }
 
 .header a {
     color: black !important;
+}
+
+.navigation ul li a:hover {
+    color: white !important;
 }
 
 .sidenav {
