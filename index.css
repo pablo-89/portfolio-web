@@ -11,8 +11,13 @@ body {
     background-size: cover;
 }
 
+#cambios-index {
+    display: flex;
+    width: 100%;
+}
+
 #inicio {
-    background-image: url("img/fondoinicio2.png");
+    background-image: url("img/back-com-inicio.webp");
 }
 
 p {
@@ -32,7 +37,8 @@ h1 {
     flex-flow: column;
     align-items: flex-end;
     color: #fff;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Oleo Script Swash Caps', light;
+    margin-top: 100px;
 }
 
 .texto-presentacion h1 {
@@ -49,7 +55,7 @@ h1 {
 }
 
 .header {
-    color: white;
+    color: #fff;
     padding: 1rem 0;
     position: fixed;
     left: 0;
@@ -59,7 +65,7 @@ h1 {
     font-family: raleway;
 }
 
-.header a {
+.header ul li a {
     color: #fff;
     text-decoration: none;
 }
@@ -112,182 +118,6 @@ h1 {
     color: white;
 }
 
-.main {
-    padding-top: 15rem;
-}
-
-.galeria {
-    font-family: 'open sans';
-}
-
-.galeria h1 {
-    text-align: center;
-    font-weight: 300;
-}
-
-.galeria h1 {
-    text-align: center;
-    margin: 20px 0 15px 0;
-    font-weight: 300;
-}
-
-.linea {
-    border-top: 5px solid #0077c0;
-    margin-bottom: 40px;
-}
-
-.uno,
-.dos,
-.tres {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border: 1px solid #000;
-    color: #000;
-    background: transparent;
-    width: 250px;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-}
-
-.uno:hover:after,
-.dos:hover:after,
-.tres:hover:after {
-    top: 0;
-    left: 0;
-}
-
-.uno:after,
-.dos:after,
-.tres:after {
-    content: "";
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 5px;
-    left: 5px;
-    transition: 0.2s;
-    background-color: #343a40;
-}
-
-.uno {
-    width: 250px;
-}
-
-.dos {
-    width: 300px;
-}
-
-.tres {
-    width: 350px;
-}
-
-.contenedor-imagenes {
-    width: 100%;
-    height: 63vh;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 10px;
-}
-
-.contenedor-imagenes .imagen {
-    position: relative;
-    height: 10px;
-    margin-bottom: 5px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
-}
-
-.imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.781);
-    width: 100%;
-    height: 0;
-    transition: 0.5s ease;
-    overflow: hidden;
-}
-
-.overlay h2 {
-    color: #4a4a4a;
-    font-size: 20px;
-    font-weight: 300;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.imagen:hover .overlay {
-    height: 100%;
-    cursor: pointer;
-}
-
-.footer {
-    width: 100%;
-    position: fixed;
-    background: #333;
-    color: white;
-    height: 80px;
-    margin: 0 auto;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
-    left: 0;
-    bottom: 0;
-    padding: 0;
-}
-
-.texto {
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-}
-
-@media screen and (max-width:1000px) {
-    .contenedor-imagenes {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .contenedor-imagenes {
-        width: 90%;
-    }
-    .contenedor-imagenes .imagen {
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:450px) {
-    h1 {
-        font-size: 22px;
-    }
-    .contenedor-imagenes {
-        width: 98%;
-    }
-    .contenedor-imagenes .imagen {
-        width: 80%;
-    }
-}
-
 @media only screen and (max-width:1030px) {
     .menu-icon {
         display: block;
@@ -320,5 +150,25 @@ h1 {
     }
     .navigation ul li a:hover {
         background: #4a4a4a;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .texto-presentacion {
+        width: 100%;
+        height: 63vh;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        font-family: 'Oleo Script Swash Caps', light;
+        margin-top: 100px;
+        margin: 15px;
+    }
+    #inico {
+        background-image: url("img/fondoweb.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
