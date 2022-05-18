@@ -123,6 +123,7 @@ h1 {
         display: block;
         cursor: pointer;
         padding: 0.4rem 1rem;
+        color: #333;
     }
     .menu-icon:hover {
         background: #4a4a4a;
@@ -174,6 +175,12 @@ h1 {
         margin-top: 100px;
         margin: 15px;
     }
+    .logo {
+        width: 80%;
+    }
+    .logo img {
+        width: 50%;
+    }
     #inico {
         background-image: url("img/fondoweb.png");
         background-repeat: no-repeat;
@@ -198,5 +205,14 @@ h1 {
         background-image: url("img/fondoweb.png");
         background-repeat: no-repeat;
         background-size: contain;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .logo {
+        width: 80%;
+    }
+    .logo img {
+        width: 90%;
     }
 }
