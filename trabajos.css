@@ -11,18 +11,20 @@
     color: white !important;
 }
 
-.sidenav {
-    width: 140px;
+.sidenav-pc {
+    width: 93%;
     position: fixed;
     z-index: 1;
     top: 150px;
-    left: 10px;
+    left: 13px;
     overflow-x: hidden;
-    padding: 8px 0;
+    padding: 12px 0;
     font-family: raleway;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sidenav a {
+.sidenav-pc a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -30,8 +32,23 @@
     display: block;
 }
 
-.sidenav a:hover {
+.sidenav-pc a:hover {
     color: #064579;
+}
+
+.sidenav-mbl {
+    width: 100%;
+    padding: 8px 0;
+    font-family: raleway;
+    margin-top: 165px;
+}
+
+.sidenav-mbl a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(53, 53, 53);
+    display: block;
 }
 
 .main {
@@ -55,7 +72,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     grid-gap: 10px;
     padding: 40px 0;
     overflow: hidden;
@@ -238,6 +255,10 @@
     margin: 18px;
 }
 
+.sidenav-mbl {
+    display: none;
+}
+
 @media only screen and (max-width:1030px) {
     .navigation a {
         color: #fff !important;
@@ -276,14 +297,14 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         width: 85%;
     }
-    .sidenav {
+    .sidenav-pc {
         display: flex;
         position: inherit;
         margin-top: 150px;
         justify-content: left;
         width: 100%;
     }
-    .sidenav a {
+    .sidenav-pc a {
         color: #333;
         font-size: 22px;
     }
@@ -292,10 +313,16 @@
         flex-flow: column;
         margin: 0 auto;
     }
+    .sidenav-mbl {
+        display: block
+    }
+    .sidenav-pc {
+        display: none;
+    }
 }
 
 @media screen and (max-width:420px) {
-    .sidenav a {
+    .sidenav-pc a {
         color: #333;
         font-size: 20px;
     }
@@ -316,7 +343,7 @@
 }
 
 @media screen and (max-width:390px) {
-    .sidenav a {
+    .sidenav-pc a {
         color: #333;
         font-size: 16px;
     }
