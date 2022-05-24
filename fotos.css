@@ -1,3 +1,7 @@
 .sidenav-pc {
     flex-flow: column !important;
 }
+
+.sidenav-pc {
+    width: 10% !important;
+}
