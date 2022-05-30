@@ -315,6 +315,13 @@
 }
 
 @media screen and (max-width:700px) {
+    #trabajos {
+        background-image: url("img/fondombl.jpg");
+        color: #fff;
+    }
+    .logo {
+        background-image: url("img/PGCw.png");
+    }
     .contenedor-imagenes {
         width: 90%;
     }
