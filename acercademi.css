@@ -64,7 +64,31 @@
                                             top: 1px;
                                         }
                                         
-                                        @media only screen and (max-width:810px) {
+                                        @media only screen and (max-width:1400px) {
+                                            #logo-web {
+                                                display: none !important;
+                                            }
+                                            #logo-mbl {
+                                                display: block !important;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width:1030px) {
+                                            .menu-icon i {
+                                                color: #333 !important;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width:850px) {
+                                            .menu-icon i {
+                                                color: #fff !important;
+                                            }
+                                            #logo-web {
+                                                display: none;
+                                            }
+                                            #logo-mbl {
+                                                display: block;
+                                            }
                                             .tittle span {
                                                 font-size: 45px;
                                                 color: #fff;
@@ -95,5 +119,61 @@
                                                 color: #fff;
                                                 font-size: 12px;
                                                 text-align: center;
+                                            }
+                                        }
+                                        
+                                        @media only screen and(max-width:700px) {
+                                            #logo-web {
+                                                display: none;
+                                            }
+                                            #logo-mbl {
+                                                display: block;
+                                            }
+                                            #inicio {
+                                                background-image: url("img/fondombl.jpg");
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                            .menu-icon i {
+                                                color: #fff;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width:450px) {
+                                            #logo-web {
+                                                display: none;
+                                            }
+                                            #logo-mbl {
+                                                display: block;
+                                            }
+                                        }
+                                        
+                                        @media screen and (max-width:430px) {
+                                            .logo {
+                                                width: 80%;
+                                            }
+                                            .logo img {
+                                                width: 90%;
+                                            }
+                                            #logo-web {
+                                                display: none;
+                                            }
+                                            #logo-mbl {
+                                                display: block;
+                                            }
+                                        }
+                                        
+                                        @media only screen and (max-width:380px) {
+                                            .logo {
+                                                width: 80%;
+                                            }
+                                            .logo img {
+                                                width: 90%;
+                                            }
+                                            #logo-web {
+                                                display: none;
+                                            }
+                                            #logo-mbl {
+                                                display: block;
                                             }
                                         }

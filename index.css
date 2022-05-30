@@ -70,15 +70,10 @@
         
         .logo-nav-container {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-        }
-        
-        .logo {
-            letter-spacing: 15px;
-            font-size: 1.4em;
-            width: 60%;
+            width: 80%;
         }
         
         .logo img {
