@@ -35,14 +35,13 @@ h1 {
     display: flex;
     flex-flow: column;
     align-items: flex-end;
-    color: #fff;
-    font-family: 'Oleo Script Swash Caps', light;
     margin-top: 240px;
 }
 
 .texto-presentacion h1 {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 75px;
+    font-family: raleway;
+    font-size: 50px;
+    color: #fff;
 }
 
 .container {
@@ -170,8 +169,8 @@ h1 {
         flex-flow: column;
         text-align: center;
         justify-content: center;
-        color: #fff;
-        font-family: 'Oleo Script Swash Caps', light;
+        color: #333;
+        font-family: raleway;
         margin-top: 100px;
         margin: 15px;
     }
@@ -181,10 +180,10 @@ h1 {
     .logo img {
         width: 50%;
     }
-    #inico {
-        background-image: url("img/fondoweb.png");
+    #inicio {
+        background-image: url("img/fondombl.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 }
 
@@ -197,14 +196,14 @@ h1 {
         text-align: center;
         justify-content: center;
         color: #fff;
-        font-family: 'Oleo Script Swash Caps', light;
+        font-family: raleway;
         margin-top: 100px;
         margin: 15px;
     }
-    #inico {
-        background-image: url("img/fondoweb.png");
+    #inicio {
+        background-image: url("img/fondombl.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 }
 
