@@ -9,3 +9,11 @@
 .sidenav-mbl {
     margin-top: 120px;
 }
+
+#logo-web {
+    display: block;
+}
+
+#logo-mbl {
+    display: none;
+}
