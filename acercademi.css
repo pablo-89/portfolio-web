@@ -82,7 +82,7 @@
                                                 margin: 0 auto;
                                             }
                                             #back {
-                                                background-image: url(img/fondoweb.png);
+                                                background-image: url("img/fondombl.jpg");
                                                 width: 100%;
                                                 height: 100vh;
                                             }
