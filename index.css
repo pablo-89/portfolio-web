@@ -122,10 +122,10 @@
         
         @media only screen and (max-width:1400px) {
             #logo-web {
-                display: none;
+                display: block;
             }
             #logo-mbl {
-                display: block;
+                display: none;
             }
             .menu-icon i {
                 color: #fff;
