@@ -308,25 +308,49 @@
 @media screen and (max-width:1000px) {
     .contenedor-imagenes {
         width: 95%;
+        display: none;
     }
     .main {
         width: 70%;
+        margin: 0 auto;
+    }
+    .sidenav-mbl {
+        display: block
+    }
+    .sidenav-pc {
+        display: none;
     }
 }
 
 @media screen and (max-width:700px) {
+    .main {
+        width: 70%;
+        margin: 0 auto;
+    }
     #trabajos {
         background-image: url("img/fondombl.jpg");
         color: #fff;
     }
-    .logo {
-        background-image: url("img/PGCw.png");
+    #logo-web {
+        display: none;
+    }
+    #logo-mbl {
+        display: block;
     }
     .contenedor-imagenes {
         width: 90%;
     }
     .contenedor-imagenes .imagen {
         width: 48%;
+    }
+    .sidenav-mbl {
+        display: block
+    }
+    .sidenav-pc {
+        display: none;
+    }
+    .menu-icon i {
+        color: #fff !important;
     }
 }
 
