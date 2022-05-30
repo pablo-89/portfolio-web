@@ -5,3 +5,7 @@
 .sidenav-pc {
     width: 10% !important;
 }
+
+.sidenav-mbl {
+    margin-top: 120px;
+}

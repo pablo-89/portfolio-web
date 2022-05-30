@@ -47,15 +47,14 @@
 
     <div class="main">
         <div class="sidenav-mbl">
-
             <label for="trabajos">Trabajos</label>
-            <select name="jobs" id="jobs">
-              <option value="fotos"><a href="fotos.html">Fotografia</a></option>
-              <option value="Video"><a href="video.html">Video</a></option>
-              <option value="Logotipos"><a href="logos.html">Logotipos</a></option>
-              <option value="Publicidad"><a href="publi.html">Publicidad</a></option>
+            <select name="jobs" id="jobs" onchange="location = this.value;">
+            <option value="#">Selecione:</option>
+              <option value="fotos.html">Fotografia</option>
+              <option value="video.html">Video</option>
+              <option value="logos.html">Logotipos</option>
+              <option value="publi.html">Publicidad</option>
             </select>
-
         </div>
         <section class="archivo">
             <a href="#image6"><img id="oxomo" src="img/oxomo.png" Alt=""></a>

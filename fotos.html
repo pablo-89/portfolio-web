@@ -49,14 +49,14 @@
 
     <div class="main">
         <div class="sidenav-mbl">
-
             <label for="trabajos">Trabajos</label>
-            <select name="jobs" id="jobs">
-              <option value="fotos"><a href="fotos.html">Fotografia</option></a>
-              <option value="Video"><a href="video.html">Video</a></option>
-              <option value="Logotipos"><a href="logos.html">Logotipos</a></option>
-              <option value="Publicidad"><a href="publi.html">Publicidad</a></option>
-            </select>
+            <select name="jobs" id="jobs" onchange="location = this.value;">
+                <option value="#">Selecione:</option>
+                  <option value="fotos.html">Fotografia</option>
+                  <option value="video.html">Video</option>
+                  <option value="logos.html">Logotipos</option>
+                  <option value="publi.html">Publicidad</option>
+                </select>
         </div>
         <div class="box-trabajos">
             <section class="archivo">
@@ -71,7 +71,6 @@
                 <a href="#image12"><img src="img/12.jpg" alt=""></a>
                 <a href="#image13"><img src="img/13.jpg" alt=""></a>
                 <a href="#image14"><img src="img/14.jpg" alt=""></a>
-                <a href="#image15"><img src="img/15.jpg" alt=""></a>
                 <a href="#image16"><img src="img/5.jpg" alt=""></a>
             </section>
             <article class="light-box" id="image1">
@@ -140,12 +139,6 @@
                 <a href="#image15" class="next"></a>
                 <a href="#" class="close">X</a>
             </article>
-            <article class="light-box" id="image15">
-                <a href="#image14" class="next"></a>
-                <img src="img/15.jpg" alt="">
-                <a href="#image16" class="next"></a>
-                <a href="#" class="close">X</a>
-            </article>
             <article class="light-box" id="image16">
                 <a href="#image15" class="next"></a>
                 <img src="img/5.jpg" alt="">
@@ -154,4 +147,11 @@
             </article>
 
         </div>
+    </div>
+
+    <script src="menumbl.js"></script>
+    <script src="scripts.js"></script>
+
 </body>
+
+</html>

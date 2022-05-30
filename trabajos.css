@@ -40,7 +40,7 @@
     width: 100%;
     padding: 8px 0;
     font-family: raleway;
-    margin-top: 165px;
+    margin-top: 75px;
 }
 
 .sidenav-mbl a {
@@ -111,8 +111,8 @@
 
 .archivo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
     margin: 0 auto;
     grid-gap: 10px;
     padding: 40px 0;
@@ -293,7 +293,6 @@
 .contenedor-video>a {
     width: 90%;
     height: 400px;
-    margin: 18px;
 }
 
 .sidenav-mbl {
@@ -335,8 +334,8 @@
         width: 80%;
     }
     .contenedor-video {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        width: 85%;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        width: 100%;
     }
     .sidenav-pc {
         display: flex;
@@ -359,6 +358,9 @@
     }
     .sidenav-pc {
         display: none;
+    }
+    .archivo {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 

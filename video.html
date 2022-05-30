@@ -46,15 +46,18 @@
     </div>
 
     <div class="main">
+
         <div class="sidenav-mbl">
             <label for="trabajos">Trabajos</label>
-            <select name="jobs" id="jobs">
-              <option value="fotos"><a href="fotos.html">Fotografia</a></option>
-              <option value="Video"><a href="video.html">Video</a></option>
-              <option value="Logotipos"><a href="logos.html">Logotipos</a></option>
-              <option value="Publicidad"><a href="publi.html">Publicidad</a></option>
-            </select>
+            <select name="jobs" id="jobs" onchange="location = this.value;">
+                <option value="#">Selecione:</option>
+                  <option value="fotos.html">Fotografia</option>
+                  <option value="video.html">Video</option>
+                  <option value="logos.html">Logotipos</option>
+                  <option value="publi.html">Publicidad</option>
+                </select>
         </div>
+
         <div class="video">
             <div class="contenedor-video">
                 <a><iframe width="100%" height="100%" src="https://www.youtube.com/embed/1_wg_mKd7sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
