@@ -17,3 +17,65 @@
 #logo-mbl {
     display: none;
 }
+
+@media only screen and (max-width:1400px) {
+    #logo-web {
+        display: block;
+    }
+    #logo-mbl {
+        display: none;
+    }
+    .menu-icon i {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+    #logo-web {
+        display: block;
+    }
+    #logo-mbl {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #logo-web {
+        display: none;
+    }
+    #logo-mbl {
+        display: block;
+    }
+    .menu-icon i {
+        color: #fff;
+    }
+}
+
+@media only screen and(max-width:700px) {
+    #logo-web {
+        display: none;
+    }
+    #logo-mbl {
+        display: block;
+    }
+    #inicio {
+        background-image: url("img/fondombl.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu-icon i {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #logo-web {
+        display: none;
+    }
+    #logo-mbl {
+        display: block;
+    }
+    .menu-icon i {
+        color: #fff;
+    }
+}
