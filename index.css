@@ -52,6 +52,10 @@ h1 {
     align-content: center;
 }
 
+.container i {
+    color: #fff;
+}
+
 .header {
     color: #fff;
     padding: 1rem 0;
