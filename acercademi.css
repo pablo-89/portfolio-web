@@ -67,15 +67,16 @@
                                         @media only screen and (max-width:810px) {
                                             .tittle span {
                                                 font-size: 45px;
-                                                color: #333;
+                                                color: #fff;
                                             }
                                             .tittle h2 {
                                                 font-size: 16px;
+                                                color: #fff;
                                             }
                                             .text {
                                                 width: 90%;
                                                 text-align: center;
-                                                color: #333;
+                                                color: #fff;
                                                 margin: 0 auto;
                                             }
                                             .btn-box {
@@ -88,5 +89,11 @@
                                             }
                                             .acercademi {
                                                 margin: 147px 0px 0px 8px;
+                                            }
+                                            .tittle {
+                                                width: 98%;
+                                                color: #fff;
+                                                font-size: 12px;
+                                                text-align: center;
                                             }
                                         }
