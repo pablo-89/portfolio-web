@@ -1,280 +1,98 @@
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #fff;
-            font-size: 1.2rem;
-            line-height: 1.6em;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 90px;
-            background-repeat: repeat;
-            background-size: cover;
-        }
-        
-        #cambios-index {
-            display: flex;
-            width: 100%;
-        }
-        
-        #inicio {
-            background-image: url("img/back-com-inicio.webp");
-        }
-        
-        p {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        
-        h1 {
-            line-height: 1.3em;
-            font-size: 2rem;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        
-        .texto-presentacion {
-            width: 95%;
-            height: 63vh;
-            display: flex;
-            flex-flow: column;
-            align-items: flex-end;
-            margin-top: 240px;
-        }
-        
-        .texto-presentacion h1 {
-            font-family: raleway;
-            font-size: 50px;
-            color: #fff;
-        }
-        
-        .container {
-            width: 75%;
-            margin: 0 auto;
-            display: flex;
-            text-align: center;
-            align-content: center;
-        }
-        
-        .header {
-            color: #fff;
-            padding: 1rem 0;
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            z-index: 10;
-            font-family: raleway;
-        }
-        
-        .header ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        
-        .logo-nav-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 80%;
-        }
-        
-        .logo img {
-            margin-top: 10px;
-            margin-left: 0;
-            width: 40%;
-        }
-        
-        .gif {
-            width: 40%;
-        }
-        
-        .menu-icon {
-            display: none;
-        }
-        
-        .navigation ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        .navigation ul li {
-            display: inline-block;
-        }
-        
-        .navigation ul li a {
-            display: block;
-            padding: 0.5rem 1rem;
-            transition: all 0.4s linear;
-            border-radius: 5px;
-        }
-        
-        .navigation ul li a:hover {
-            background: #4a4a4a;
-            color: white;
-        }
-        
-        #logo-web {
-            display: none;
-        }
-        
-        #logo-mbl {
-            display: block;
-        }
-        
-        @media only screen and (max-width:1400px) {
-            #logo-web {
-                display: block;
-            }
-            #logo-mbl {
-                display: none;
-            }
-            .menu-icon i {
-                color: #fff;
-            }
-        }
-        
-        @media only screen and (max-width:1030px) {
-            #logo-web {
-                display: block;
-            }
-            #logo-mbl {
-                display: none;
-            }
-            .menu-icon {
-                display: block;
-                cursor: pointer;
-                padding: 0.4rem 1rem;
-                color: #333;
-            }
-            .menu-icon:hover {
-                background: #4a4a4a;
-                transition: all 0.4s linear;
-                border-radius: 5px;
-            }
-            .navigation {
-                width: 100%;
-                margin-top: 1rem;
-                background-color: #070707e6;
-                border-radius: 10px;
-            }
-            .navigation ul {
-                display: none;
-            }
-            .navigation ul.show {
-                display: block;
-            }
-            .navigation ul li {
-                display: block;
-            }
-            .navigation ul li a {
-                display: block;
-                padding: 0.5rem 0;
-                transition: all 0.4s linear;
-                border-radius: 5px;
-            }
-            .navigation ul li a:hover {
-                background: #4a4a4a;
-            }
-            .logo {
-                width: 80%;
-            }
-            .logo img {
-                width: 45%;
-            }
-            .menu-icon i {
-                color: #333;
-            }
-        }
-        
-        @media only screen and (max-width:850px) {
-            #logo-web {
-                display: none;
-            }
-            #logo-mbl {
-                display: block;
-            }
-            .menu-icon i {
-                color: #fff;
-            }
-            s .texto-presentacion {
-                width: 90%;
-                height: 100vh;
-                display: flex;
-                flex-flow: column;
-                text-align: center;
-                justify-content: center;
-                color: #333;
-                font-family: raleway;
-                margin-top: 100px;
-                margin: 15px;
-            }
-            .logo {
-                width: 80%;
-            }
-            .logo img {
-                width: 50%;
-            }
-        }
-        
-        @media only screen and(max-width:700px) {
-            #logo-web {
-                display: none;
-            }
-            #logo-mbl {
-                display: block;
-            }
-            #inicio {
-                background-image: url("img/fondombl.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .menu-icon i {
-                color: #fff;
-            }
-        }
-        
-        @media only screen and (max-width:450px) {
-            .texto-presentacion {
-                width: 90%;
-                height: 100vh;
-                display: flex;
-                flex-flow: column;
-                text-align: center;
-                justify-content: center;
-                color: #fff;
-                font-family: raleway;
-                margin-top: 100px;
-                margin: 15px;
-            }
-            #inicio {
-                background-image: url("img/fondombl.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            #logo-web {
-                display: none;
-            }
-            #logo-mbl {
-                display: block;
-            }
-            .menu-icon i {
-                color: #fff;
-            }
-        }
-        
-        @media screen and (max-width:430px) {
-            .logo {
-                width: 80%;
-            }
-            .logo img {
-                width: 90%;
-            }
-        }
-        
-        @media only screen and (max-width:380px) {
-            .logo {
-                width: 80%;
-            }
-            .logo img {
-                width: 90%;
-            }
-        }
+             #inicio {
+                 width: 100%;
+                 height: 100vh;
+                 background: rgb(51, 51, 51);
+                 background: linear-gradient(90deg, rgba(51, 51, 51, 1) 0%, rgba(133, 133, 133, 0.5774510487788865) 0%, rgba(51, 51, 51, 1) 100%);
+                 z-index: 0;
+             }
+             
+             .main {
+                 display: flex;
+             }
+             
+             body {
+                 font-family: Georgia, 'Times New Roman', Times, serif;
+                 color: #fff;
+                 font-size: 1.2rem;
+                 line-height: 1.6em;
+                 margin: 0;
+                 padding: 0;
+                 padding-bottom: 90px;
+                 background-repeat: repeat;
+                 background-size: cover;
+             }
+             
+             .fondo-inicio {
+                 width: 50%;
+             }
+             
+             .fondo-inicio img {
+                 width: 100%;
+                 background-size: cover;
+                 z-index: 200;
+             }
+             
+             nav {
+                 font-family: raleway;
+                 opacity: 1;
+                 width: 100%;
+                 height: 12vh;
+                 display: flex;
+                 justify-content: space-between;
+                 align-content: center;
+                 position: fixed;
+                 top: 0;
+                 transition: top 0.5s;
+                 z-index: 1000;
+             }
+             
+             header {
+                 z-index: 1000;
+             }
+             
+             .navegacion {
+                 width: 50%;
+                 display: flex;
+                 justify-content: end;
+                 align-items: center;
+                 margin-right: 25px;
+             }
+             
+             .navegacion>a {
+                 display: inline-block;
+                 text-decoration: none;
+                 color: #fff;
+                 padding: 30px;
+             }
+             
+             .navegacion>a:hover {
+                 background: #fff;
+                 color: #333;
+                 border-radius: 10px;
+                 transition: all 1s ease;
+                 height: 15px;
+             }
+             
+             .logo-fotos {
+                 margin: 10px;
+                 width: 50%;
+                 max-width: 600px;
+                 min-width: 400px;
+             }
+             
+             .logo-fotos>img {
+                 width: 45%;
+                 vertical-align: top;
+                 margin: 5px;
+                 margin-left: 25px
+             }
+             
+             .box-index {
+                 width: 100%;
+                 height: 80vh;
+                 display: flex;
+                 justify-content: space-between;
+                 align-content: center;
+                 vertical-align: center;
+                 font-family: raleway;
+             }
