@@ -22,16 +22,6 @@
                  background-size: cover;
              }
              
-             .fondo-inicio {
-                 width: 50%;
-             }
-             
-             .fondo-inicio img {
-                 width: 100%;
-                 background-size: cover;
-                 z-index: 200;
-             }
-             
              nav {
                  font-family: raleway;
                  opacity: 1;
@@ -93,6 +83,17 @@
                  display: flex;
                  justify-content: space-between;
                  align-content: center;
-                 vertical-align: center;
                  font-family: raleway;
+             }
+             
+             .fondo-inicio {
+                 width: 50%;
+             }
+             
+             .fondo-inicio img {
+                 width: 50%;
+             }
+             
+             .texto-presentacion {
+                 width: 50%;
              }
