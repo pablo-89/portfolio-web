@@ -1,35 +1,37 @@
-             #inicio {
-                 width: 100%;
-                 height: 100vh;
-                 background: rgb(51, 51, 51);
-                 background: linear-gradient(90deg, rgba(51, 51, 51, 1) 0%, rgba(133, 133, 133, 0.5774510487788865) 0%, rgba(51, 51, 51, 1) 100%);
-                 z-index: 0;
-             }
-             
              .main {
-                 display: flex;
+                 height: 100%;
              }
-             
+            
+            html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
              body {
+                width: 100%;
+                height: 100%;
+                background: rgb(51, 51, 51);
+                background: linear-gradient(90deg, rgba(51, 51, 51, 1) 0%, rgba(133, 133, 133, 0.5774510487788865) 0%, rgba(51, 51, 51, 1) 100%);
+                z-index: 0;
                  font-family: Georgia, 'Times New Roman', Times, serif;
                  color: #fff;
-                 font-size: 1.2rem;
-                 line-height: 1.6em;
+                 font-size: 0;
+                 line-height: 0;
                  margin: 0;
                  padding: 0;
-                 padding-bottom: 90px;
-                 background-repeat: repeat;
-                 background-size: cover;
              }
              
              .fondo-inicio {
-                 width: 50%;
+                height: 100%;
              }
              
              .fondo-inicio img {
-                 width: 100%;
-                 background-size: cover;
-                 z-index: 200;
+                height: 100%;
+             }
+
+             .texto-presentacion {
+                 font-size: 1.2rem;
+                 line-height: 2em;
              }
              
              nav {
@@ -89,10 +91,9 @@
              
              .box-index {
                  width: 100%;
-                 height: 80vh;
+                 height: 100%;
                  display: flex;
                  justify-content: space-between;
-                 align-content: center;
-                 vertical-align: center;
+                 align-items: center;
                  font-family: raleway;
              }
