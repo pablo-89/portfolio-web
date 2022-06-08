@@ -64,7 +64,7 @@
             min-width: 400px;
         }
         
-        .logo-fotos>img {
+        .logo-fotos img {
             width: 45%;
             vertical-align: top;
             margin: 5px;
@@ -84,16 +84,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 50%;
         }
         
         .fondo-inicio img {
-            width: 100%;
+            height: 100%;
         }
         
         .texto-presentacion {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 50%;
         }

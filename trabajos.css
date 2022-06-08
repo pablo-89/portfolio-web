@@ -1,14 +1,19 @@
 #trabajos {
     background-image: url("img/fondoweb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.navegacion>a {
     color: #333;
 }
 
-.header a {
-    color: black !important;
-}
-
-.navigation ul li a:hover {
-    color: white !important;
+.navegacion>a:hover {
+    background: #333;
+    color: #fff;
 }
 
 .sidenav-pc {
@@ -24,6 +29,10 @@
     justify-content: space-between;
 }
 
+.sidenav-pc {
+    color: #4a4a4a;
+}
+
 .sidenav-pc a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -34,69 +43,6 @@
 
 .sidenav-pc a:hover {
     color: #064579;
-}
-
-.sidenav-mbl {
-    width: 100%;
-    padding: 8px 0;
-    font-family: raleway;
-    margin-top: 75px;
-}
-
-.sidenav-mbl a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(53, 53, 53);
-    display: block;
-}
-
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-.main {
-    margin-left: 190px;
-    margin-top: 170px;
-    text-align: center;
-    width: 85%;
 }
 
 .main h2 {
@@ -293,143 +239,4 @@
 .contenedor-video>a {
     width: 90%;
     height: 400px;
-}
-
-.sidenav-mbl {
-    display: none;
-}
-
-@media only screen and (max-width:1030px) {
-    .navigation a {
-        color: #fff !important;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .contenedor-imagenes {
-        width: 95%;
-        display: none;
-    }
-    .main {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .sidenav-mbl {
-        display: block
-    }
-    .sidenav-pc {
-        display: none;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .main {
-        width: 70%;
-        margin: 0 auto;
-    }
-    #trabajos {
-        background-image: url("img/fondombl.jpg");
-        color: #fff;
-    }
-    #logo-web {
-        display: none;
-    }
-    #logo-mbl {
-        display: block;
-    }
-    .contenedor-imagenes {
-        width: 90%;
-    }
-    .contenedor-imagenes .imagen {
-        width: 48%;
-    }
-    .sidenav-mbl {
-        display: block
-    }
-    .sidenav-pc {
-        display: none;
-    }
-    .menu-icon i {
-        color: #fff !important;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    h1 {
-        font-size: 22px;
-    }
-    .contenedor-imagenes {
-        width: 98%;
-    }
-    .contenedor-imagenes .imagen {
-        width: 80%;
-    }
-    .contenedor-video {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        width: 100%;
-    }
-    .sidenav-pc {
-        display: flex;
-        position: inherit;
-        margin-top: 150px;
-        justify-content: left;
-        width: 10%;
-    }
-    .sidenav-pc a {
-        color: #333;
-        font-size: 22px;
-    }
-    .main {
-        display: flex;
-        flex-flow: column;
-        margin: 0 auto;
-    }
-    .sidenav-mbl {
-        display: block
-    }
-    .sidenav-pc {
-        display: none;
-    }
-    .archivo {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-
-@media screen and (max-width:420px) {
-    .sidenav-pc a {
-        color: #333;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .archivo {
-        grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
-    }
-    .close {
-        top: 20px;
-        right: 20px;
-    }
-    .contenedor-video {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        width: 85%;
-    }
-}
-
-@media screen and (max-width:390px) {
-    .sidenav-pc a {
-        color: #333;
-        font-size: 16px;
-    }
-    .contenedor-video>a {
-        width: 75%;
-        height: 175px;
-        margin: 5px;
-    }
-    .archivo {
-        width: 100%;
-    }
-    .archivo>a {
-        width: 73%;
-    }
 }
