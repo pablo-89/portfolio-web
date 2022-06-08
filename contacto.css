@@ -12,7 +12,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #9c3f3f;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -21,7 +21,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #9c3f3f;
 }
 
 form {
